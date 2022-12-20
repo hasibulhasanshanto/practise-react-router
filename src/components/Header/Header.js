@@ -1,16 +1,41 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
   return (
     <div className="header">
       <nav>
-        <Link to="/">Home</Link>
-        <Link to="/about">About Us</Link>
-        <Link to="/friends">Friends</Link>
-        <Link to="/contact">Contact Us</Link>
-        <Link to="/hire-us">Hire Us</Link>
+        <NavLink
+          to="/"
+          className={({ isActive }) => (isActive ? "active-link" : undefined)}
+        >
+          Home
+        </NavLink>
+        <NavLink
+          to="/about"
+          className={({ isActive }) => (isActive ? "active-link" : undefined)}
+        >
+          About Us
+        </NavLink>
+        <NavLink
+          to="/friends"
+          className={({ isActive }) => (isActive ? "active-link" : undefined)}
+        >
+          Friends
+        </NavLink>
+        <NavLink
+          to="/contact"
+          className={({ isActive }) => (isActive ? "active-link" : undefined)}
+        >
+          Contact Us
+        </NavLink>
+        <NavLink
+          to="/hire-us"
+          className={({ isActive }) => (isActive ? "active-link" : undefined)}
+        >
+          Hire Us
+        </NavLink>
       </nav>
       <p>Common Header</p>
     </div>

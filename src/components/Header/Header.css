@@ -14,3 +14,9 @@
   color: #fff;
   border-radius: 8px;
 }
+
+.active-link {
+  background-color: aqua;
+  color: #fff !important;
+  border-radius: 8px;
+}
