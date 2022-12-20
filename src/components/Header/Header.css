@@ -1,0 +1,16 @@
+.header {
+  padding: 10px 0;
+}
+.header a {
+  padding: 10px;
+  text-decoration: none;
+  color: blueviolet;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.header a:hover {
+  background-color: red;
+  color: #fff;
+  border-radius: 8px;
+}
